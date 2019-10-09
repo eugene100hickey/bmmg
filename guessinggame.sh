@@ -2,16 +2,18 @@
 #!/usr/bin/env bash
 # File: guessinggame.sh
 
-files=$(ls | wc -l)
+files=$(ls -la| wc -l)
 function enterguess {
 	echo "Guess how many files in the current directory and  then press enter:"
 	read guess
 }
 
 enterguess
+counter=1
 
 while [[ $guess -ne $files ]]
 do
+let counter=$counter+1
 if [[ $guess -lt $files ]]
 then
 	echo "Your guess was too low"
@@ -26,6 +28,5 @@ fi
 
 done
 
-echo "Fantastic, you got it right"
-echo "The number of files is"
-echo $guess
+echo "Fantastic, you got it right after $counter attempts"
+echo "The number of files is  $guess"
