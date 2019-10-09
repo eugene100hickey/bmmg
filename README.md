@@ -1,5 +1,9 @@
-The Guessing Game Programme
-author: Eugene
-Wed Oct 9 13:47:36 IST 2019
+-e The Guessing Game Programme
+
+-e author: Eugene
+
+Wed Oct 9 14:04:00 IST 2019
+-e 
 There are this many lines in this file
+
 31 guessinggame.sh
